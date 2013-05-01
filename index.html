@@ -10,8 +10,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        
         <link rel="stylesheet" href="css/main.css">
+        
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body data-spy="scroll" data-target=".navbar">
@@ -19,57 +20,52 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="navbar">
-		  <div class="navbar-inner">
-		    <a class="brand" href="#">Dottoressa Moira Mattioni</a>
-		    <ul class="nav">
-		      <li><a href="#contacts">Contatti</a></li>
-		      <li><a href="#ambulanza">Ambulanza Medica</a></li>
-		      <li><a href="#teleanestesia">Tele Anestesia</a></li>
-		    </ul>
-		  </div>
-		</div>
-		<div class="container">
-			<div id="contacts">
-			<p>Dottoressa Moira Mattioni, Medico Veterinario.</p>
+        <section id="menu" style="top: 0px; position: fixed;" class="docked">
+        	<div class="content">
+		      	<nav>
+		      		<a href="#intro"><strong>Dottoressa Moira Mattioni</strong></a>
+		      		<a href="#contacts">Contatti</a>
+		      		<a href="#ambulanza">Ambulanza Medica</a>
+		      		<a href="#teleanestesia">Tele Anestesia</a>
+		    	</nav>	
+        	</div>
+        </section>
+        <section class="page page-light">
+        	<div id="intro" class="content">
+        		<h1>Dottoressa Moira Mattioni</h1>
+        		<p>La dottoressa Moira Mattioni e' Medico Veterinario specializzato 
+        			in cavalli.</p>	
+        	</div>
+        </section>
+		<section class="page page-dark">
+			<div id="contacts" class="content">
+			
 			
 				<h1>Contatti</h1>
 				<p>Telefono: </p>
 				<p>Email: moira.mattioni@gmail.com</p>
 				
 			</div>
-			<div class="row">
-				<div id="ambulanza">
-					<h1>Ambulanza</h1>
-					<div class="span4">
-						<img src="http://placehold.it/350x350">
-					</div>
-					<div class="span8">
-						<p>Trailer medico</p>	
-					</div>
+		</section>
+		<section class="container page page-light">
+			<div id="ambulanza" class="content">
+				<h1>Ambulanza</h1>
+				
+				<img src="http://placehold.it/350x350">
+				<p>Trailer medico</p>	
+				
+			</div>
+		</section>
+		<section class="container page page-dark">
+			<div id="teleanestesia" class="content">
+				<h1>TeleAnestesia</h1>
+				<div class="span8">
+					<p>Teleanestesia con fucile.</p>	
+				</div>
+				<div class="span4">
+					<img src="http://placehold.it/350x350">
 				</div>
 			</div>
-			<div class="row">
-				<div id="teleanestesia">
-					<h1>Fucile</h1>
-					<div class="span8">
-						<p>Teleanestesia con fucile.</p>	
-					</div>
-					<div class="span4">
-						<img src="http://placehold.it/350x350">
-					</div>
-				</div>
-			</div>	
-		</div>
-		
-
-
-
-
-
-        
-        <script src="./js/vendor/jquery-1.9.1.min.js"></script>
-        <script src="./js/bootstrap.min.js"></script>
-        
+		</section>
     </body>
 </html>
