@@ -114,11 +114,6 @@ nav a:hover,
   background-color: #521f14;
   text-decoration: none;
 }
-.twitter-follow-button {
-  position: absolute;
-  right: 0;
-  top: 11px;
-}
 .dark-red {
   border: 2px solid #140805;
   border-left-color: #3d170f;
@@ -204,53 +199,6 @@ nav a:hover,
   background-color: #79c3d2;
   border-top: 8px solid #66bbcc;
 }
-#main #intro {
-  background-color: #d9eef2;
-  float: left;
-  margin-top: -8px;
-  margin-right: 5px;
-  height: 400px;
-  position: relative;
-  z-index: 2;
-  font-family: 'Droid Serif', 'Georgia';
-  width: 395px;
-  padding: 20px 20px 30px 30px;
-  border: 2px dashed #53b2c6;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.5);
-  border-bottom: 0;
-  border-top: 0;
-}
-#main #intro #download {
-  color: transparent;
-  border: 0;
-  float: left;
-  display: inline-block;
-  margin: 15px 0 15px -5px;
-}
-#main #intro #download img {
-  display: inline-block;
-}
-#main #intro #download-info {
-  color: #476685;
-  display: inline;
-  float: left;
-  margin: 21px 0 0 15px;
-  line-height: 22px;
-}
-#main #intro #download-info code {
-  font-size: 13px;
-}
-#main #intro #download-info a {
-  text-decoration: none;
-  color: #476685;
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
-}
-#main #intro #download-info a:hover {
-  text-decoration: none;
-  border-bottom: 1px dashed #476685;
-}
 #main h2 {
   color: #143352;
   margin: 20px 0;
@@ -298,44 +246,6 @@ nav a:hover,
   box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
-  font-family: 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', 'Monaco', Courier, monospace !important;
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-}
-#main #example pre code .attribute,
-#main #example pre code .keyword {
-  color: #d9bf8c;
-}
-#main #example pre code .variable {
-  color: #738c73;
-}
-#main #example pre code .element {
-  color: #669991;
-}
-#main #example pre code .string,
-#main #example pre .regexp {
-  color: #bcd279;
-}
-#main #example pre code .class {
-  color: #c2a770;
-  font-weight: normal;
-}
-#main #example pre code .id {
-  color: #c2b470;
-  font-weight: normal;
-}
-#main #example pre code .comment {
-  color: rgba(255, 255, 255, 0.2);
-}
-#main #example pre code .number,
-#main #example pre .color {
-  color: #b35e4d;
-}
-#main #example pre code .class,
-#main #example pre code .mixin,
-#main #example pre .special {
-  color: #669199;
 }
 #main #example pre #time {
   color: #aaaaaa;
@@ -458,101 +368,10 @@ nav a:hover,
 .page-light code + h2 {
   border-top-color: rgba(0, 0, 0, 0.1);
 }
-#reference .content h1 {
-  padding: 0;
-  font-size: 1.6em;
-}
-#reference .content h3 {
-  font-weight: bold;
-}
-#reference .content p + h1,
-#reference .content pre + h1,
-#reference .content code + h1 {
-  border-top: 6px solid rgba(0, 0, 0, 0.1);
-  padding-top: 30px;
-}
-#reference .content p + h3,
-#reference .content pre + h3,
-#reference .content code + h3 {
-  border-top: 2px solid rgba(0, 0, 0, 0.1);
-  padding-top: 10px;
-}
-td {
-  padding-right: 30px;
-}
-#synopsis {
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-}
-#synopsis h2,
-#about h2,
-#translations h2 {
-  font-size: 30px;
-  padding: 10px 0;
-}
-#synopsis h1 + h2,
-#about h1 + h2,
-#translations h1 + h2 {
-  margin-top: 15px;
-}
-#synopsis h3,
-#about h3,
-#translations h3 {
-  font-size: 22px;
-}
-#synopsis .code-example,
-#about .code-example,
-#translations .code-example {
-  border-spacing: 0;
-  border-width: 1px;
-  border-style: dashed;
-  padding: 0;
-}
-#synopsis .code-example pre,
-#about .code-example pre,
-#translations .code-example pre {
-  border: 0;
-  margin: 0;
-}
-#synopsis .code-example td,
-#about .code-example td,
-#translations .code-example td {
-  border: 0;
-  margin: 0;
-  background-color: #191919;
-  vertical-align: top;
-  padding: 0;
-}
-#synopsis .code-example tr,
-#about .code-example tr,
-#translations .code-example tr {
-  padding: 0;
-}
-#synopsis .css-output td,
-#about .css-output td,
-#translations .css-output td {
-  border-left: 0;
-}
-#synopsis .css-output,
-#about .css-output,
-#translations .css-output,
-#synopsis .less-example,
-#about .less-example,
-#translations .less-example {
-  width: 390px;
-}
-#synopsis pre,
-#about pre,
-#translations pre {
-  padding: 20px;
-  line-height: 20px;
-  font-size: 14px;
-}
 .page-dark {
-  text-shadow: 0 -1px 1px #262626;
+  text-shadow: 0 -1px 1px #8c8c8c;
   color: #eaf2d9;
-  background-color: #191919;
+  background-color: #808080;
 }
 .page-dark a {
   text-decoration: none;
@@ -564,7 +383,7 @@ td {
   border-bottom: 1px dashed #fbfbcb;
 }
 .page-dark .content {
-  background-color: #262626;
+  background-color: #595959;
   clear: both;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
@@ -576,7 +395,7 @@ td {
   color: #e2e2b1;
 }
 .page-dark pre {
-  background-color: #191919;
+  background-color: #808080;
   border-color: #f9f9b3;
 }
 .page-dark pre code .attribute {

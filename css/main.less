@@ -134,11 +134,7 @@ nav a, #dropdown li {
     text-decoration: none;
   }
 }
-.twitter-follow-button {
-  position: absolute;
-  right: 0;
-  top: 11px;
-}
+
 .dark-red {
     @red: @medium;
     border: 2px solid darken(@red, 25%);
@@ -220,33 +216,6 @@ nav a, #dropdown li {
   background-color: @light-blue;
   border-top: 8px solid darken(@light-blue, 5%);
 
-  #intro {
-    background-color: lighten(@light-blue, 25%);
-    float: left;
-    margin-top: -8px;
-    margin-right: 5px;
-
-    height: 400px;
-    position: relative;
-    z-index: 2;
-    font-family: 'Droid Serif', 'Georgia';
-    width: 395px;
-    padding: 20px 20px 30px 30px;
-    border: 2px dashed darken(@light-blue, 10%);
-    .box-shadow(1px, 0px, 6px, 0.5);
-    border-bottom: 0;
-    border-top: 0;
-    #download { color: transparent; border: 0; float: left; display: inline-block; margin: 15px 0 15px -5px; }
-    #download img { display: inline-block}
-    #download-info {
-      code {
-        font-size: 13px;  
-      }
-	  @color: @blue + #333;
-      color: @color; display: inline; float: left; margin: 21px 0 0 15px; line-height: 22px;
-	  .link(@color);
-	}
-  }
   h2 {
     span {
       color: @medium;  
@@ -284,18 +253,6 @@ nav a, #dropdown li {
       border: 1px dashed @lightest;
       line-height: 15px;
       .box-shadow(0, 0px, 15px, 0.5);
-      .code;
-      .border-radius(2px);
-      code .attribute, code .keyword { color: hsl(40, 50%, 70%) }
-      code .variable  { color: hsl(120, 10%, 50%) }
-      code .element   { color: hsl(170, 20%, 50%) }
-
-      code .string, .regexp { color: hsl(75, 50%, 65%) }
-      code .class { color: hsl(40, 40%, 60%); font-weight: normal }
-      code .id { color: hsl(50, 40%, 60%); font-weight: normal }
-      code .comment { color: rgba(255, 255, 255, 0.2) }
-      code .number, .color { color: hsl(10, 40%, 50%) }
-      code .class, code .mixin, .special { color: hsl(190, 20%, 50%) }
       #time { color: #aaa }
     }
     float: right;
@@ -389,75 +346,6 @@ nav a, #dropdown li {
   p + h2, pre + h2, code + h2 { border-top-color: rgba(0, 0, 0, 0.1) }
 }
 
-#reference .content {
-  h1 {
-	padding: 0;
-	font-size: 1.6em;
-  }
-  h2 {
-	
-  }
-  h3 {
-	font-weight: bold;
-  }
-  p + h1, pre + h1, code + h1 {
-    border-top: 6px solid rgba(0, 0, 0, 0.1);
-    padding-top: 30px;
-  }
-  p + h3, pre + h3, code + h3 {
-    border-top: 2px solid rgba(0, 0, 0, 0.1);
-    padding-top: 10px;
-  }
-}
-
-td {
-  padding-right: 30px;  
-}
-#synopsis {
-  .box-shadow(0, 5px, 5px, 0.2);
-}
-#synopsis, #about, #translations {
-  h2 {
-    font-size: 30px;  
-    padding: 10px 0;
-  }
-  h1 + h2 {
-      margin-top: 15px;  
-  }
-  h3 { font-size: 22px }
-
-  .code-example {
-    border-spacing: 0;
-    border-width: 1px;
-    border-style: dashed;
-    padding: 0;
-    pre { border: 0; margin: 0 }
-    td {
-      border: 0;
-      margin: 0;
-      background-color: desaturate(darken(@darkest, 5%), 20%);
-      vertical-align: top;
-      padding: 0;
-    }
-    tr { padding: 0 }
-  }
-  .css-output {
-    td {
-      border-left: 0;  
-    }
-  }
-  .less-example {
-    //border-right: 1px dotted rgba(255, 255, 255, 0.5) !important;
-  }
-  .css-output, .less-example {
-    width: 390px;
-  }
-  pre {
-    padding: 20px;
-    line-height: 20px;
-    font-size: 14px;
-  }
-}
 .link(@link-color: @light-yellow, @link-underline: rgba(255, 255, 255, 0.2)) {
   a {
     text-decoration: none;
@@ -471,12 +359,12 @@ td {
 }
 .page-dark {
   .link;
-  @bg: desaturate(darken(@darkest, 5%), 20%);
+  @bg: lighten(desaturate(darken(@darkest, 15%), 40%), 50%);
   text-shadow: 0 -1px 1px lighten(@bg, 5%);
   color: @highlight;
   background-color: @bg;
   .content {
-    background-color: desaturate(@darkest, 20%);
+    background-color: lighten(desaturate(@darkest, 50%), 20%);
     clear: both;
     .box-shadow(0, 5px, 5px, 0.4);
   }
